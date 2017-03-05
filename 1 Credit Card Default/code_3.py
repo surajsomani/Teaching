@@ -2,6 +2,7 @@ import tflearn as tf
 from tflearn.layers.core import input_data,dropout,fully_connected
 from tflearn.layers.estimator import regression
 from tflearn.data_utils import load_csv
+import tensorflow as tfs
 
 
 data,target=load_csv('dataset.csv',target_column=-1,columns_to_ignore=[1],has_header=True,categorical_labels=True,n_classes=2)
